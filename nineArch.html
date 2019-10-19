@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nine Arch</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #03a154;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1100px;
+  position: relative;
+  margin: auto;
+}
+/* Caption text */
+.text {
+  color: #04030a;
+  font-size: 70px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/5 etc) */
+.numbertext {
+  color: #04030a;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #02060d;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.7s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .5} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body background="1eefc5567dc5c55f67ef6849b9235582.jpg">
+	<div class="topnav" id="myTopnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="AboutElla.html">About Ella</a>
+    <div class="dropdown">
+     <button class="dropbtn">Places 
+       <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="dropdown-content">
+      <a href="ellaRock.html">Ella Rock</a>
+      <a href="littleAdamsPeak.html">Little Adam's Peak</a>
+      <a href="nineArch.html">Nine Arch</a>
+      <a href="liptonSeat.html">Lipton Seat</a>
+      <a href="rawanafalls.html">Rawana Falls</a>
+
+     </div>
+    </div>
+     <a href="map.html">Map</a>
+     <a href="hotels.html">Hotels</a>
+     <input type="text" placeholder="Search..">
+    </div>
+	<table border="0" width="1500" bgcolor="black" >
+		<tr>
+			<td><img src="logo-srilanka.png" alt="" border="0" height=150 width=200></img></td>
+			<td><img src="Ella-designstyle-kiddo-m.png" alt="" border="0" height=150 width=550></img ></td>
+			<td width="450"><marquee direction="right"><font color="yellow" face="Britannic Bold" size="6">Nine Arch...</font></marquee></td>
+			</tr>
+	</table>
+  <h1><center><u>Nine Arch,Sri Lanka..</u></center></h1>
+   <table width="1100" align="center">
+    <tr>
+      <td><p><font color="white" size="5" face="Britannic Bold">Ella is has become one of the major tourist hotspots of Sri Lanka and it is largely due to the epic scenery and hikes in the region such as Ella Rock and Adam’s Peak. However, it’s the smaller attractions, hidden gems and laid back vibes of the town that keep people in Ella for up to a week at a time. One of those unique attractions is the Nine Arch Bridge in between Ella station and Demodara station.The Nine Arch Bridge in Ella is on the Demodara loop and spans 91 meters at a height of 24m. The beautiful nine arches make it a very picturesque spot especially as it is located in a dense jungle and agricultural setting. Behind the railway, a forest is booming and below, tea leaves are being cultivated.If you love this scenery and want the ultimate Sri Lanka train experience click here to read my Kandy to Ella train article, where I shot many of my favorite images from my Sri Lanka adventure.
+
+</font></p></td>
+</tr>
+</table>
+
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="9 arch/fer.png" width=1100 height=500 >
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="9 arch/FB_IMG_1537794505938.jpg" width=1100 height=500 >
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="9 arch/FB_IMG_1537794510275.jpg" width=1100 height=500 >
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="9 arch/FB_IMG_1537794546288.jpg" width=1100 height=500 >
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="9 arch/10.png" width=1100 height=500 >
+  </div>
+</div>
+ <div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>  
+  <span class="dot"></span>  
+
+</div>
+<br>
+<h1><center><u>How to get to the Nine Arch Bridge in Ella.</u></center> </h1>
+
+  <table width="1100" align="center">
+    <tr>
+      <td><p><font color="white" size="5" face="Britannic Bold">
+The bridge is actually quite close to the main street in Ella town. A tuk-tuk will take you there for 200 rupees or you can enjoy the walk through the jungle for 20 or so minutes. You can access from either side of the railway. The side we came down meant we had to trek down for 10-15 minutes as there was no tuk-tuk access but if you aren’t up for the trek and adventure you can literally get dropped right at the bridge in a tuk-tuk.
+The map below is pinned correctly and will guide you straight to the location of the Nine Arch Bridge in Ella.
+
+
+</font></p></td>
+</tr>
+</table>
+<P><b><center><u><font size="6"> Nine Arch Bridge History   </center></font></u></b></P>
+<table width="1100" align="center">
+  <tr>
+    <td>
+<p><font color="white" size="5" face="Britannic Bold">
+The bridge was built at Gotuwala between the Ella and Demodara stations during the British Colonial period. Locally it is known as ‘Ahas Namaye Palama’ meaning nine skies bridge in Sinhala. The name derives from the visual experience. When you stand below the bridge and look up you can see the sky through the nine arches.
+The unique part about this bridge is that it is built entirely from rocks, bricks, and cement with no use of steel or metals throughout the structure. The bridge was commissioned in 1941 and the story goes that as the bridge was being planned World War I broke out. The steel and metal materials destined to be used in the bridge were reassigned to be used for military purposes. The materials were then gathered in the form of rocks, bricks, and cement to make sure the bridge construction still went ahead.
+
+</td>
+</tr></font></p>
+</table>
+<P><b><center><u><font size="6">The Nine Arch Bridge Experience</center></font></u></b></P>>
+<table width="1100" align="center">
+  <tr> <td>
+<p><font color="white" size="5" face="Britannic Bold">
+Many foreign and domestic tourists gather around and on the bridge in the hour before one of the trains is scheduled to pass over the bridge. On the day I visited the train was scheduled for 1230 pm but it was an hour late. You can check the full schedule of trains in Sri Lanka. Better early than late in these situations
+There are a number of cafes in the hills with vantage points of the bridge but down at the bridge is where you want to be. The Nine Arch Bridge has a huge bend in it so in my opinion standing on the side the bridge bends away from makes for the best photos and accentuates the arch.
+It’s a great spot for drone photography and videography and my friend Martin was filming while I took photos. Here is the video he shot:
+If you want to get photos and videos with no people on the bridge (there’s quite a crowd during train time), be sure to arrive around sunrise or sunset for the best lighting and to avoid the crowds.
+
+</td>
+</tr>
+</font></p>
+</table>
+<br>
+      </div></td>
+<table border="0" width="1200" height="200" bgcolor="#0a0733" align="center">
+      <td width="400"><font color="white" size="3">Contact Us<br><br>Telephone No: +94117895810<br>E-Mail: sriella@gmail.com <br></font></td>
+    <td width="400"><font color="white" size="3">Social Networks<br><br><img src="image-result-for-include-social-media-links-on-ema.png" width="200" height="50"></font></td>
+  </tr>
+</table>
+<script>
+  var slideIndex = 0;
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
